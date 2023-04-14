@@ -7,7 +7,7 @@ const isValidEmail = (email) => {
   const isValidCPF = (cpf) => {
     const regex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/
     return regex.test(String(cpf).toLowerCase())
-    
+
   }
   
   const form = document.querySelector('form')
@@ -58,5 +58,6 @@ const isValidEmail = (email) => {
   inputEmail.addEventListener('input', () => {
     resetInput(inputEmail)
   })
+  
 
   
